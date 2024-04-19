@@ -29,9 +29,9 @@ class PesquisaDigital:
     def fazer_pesquisa(self):
         while True:
             lista_respostas = [] 
-            
+
             try:
-                idade = int(input('Digite sua idade: '))
+                idade = int(input('Digite sua idade (ou 0 para sair): '))
                 
                 # Caso a idade seja igual a Zero, o código para.
                 if idade == 0:
@@ -42,7 +42,7 @@ class PesquisaDigital:
                 # caso a variável idade seja maior que zero
                 elif idade > 0:
                     genero = input('Digite a inicial do seu gênero: ')
-                    while genero not in ['M','m','F','f']:
+                    while genero not in ['M','m','F','f','O','o']:
                         print('Por favor, digite somente a inicial do seu gênero: ')
                         genero = input('Digite seu gênero: ')
 
