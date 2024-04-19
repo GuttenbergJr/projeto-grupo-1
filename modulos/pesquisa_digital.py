@@ -72,7 +72,7 @@ class PesquisaDigital:
                 hora_atual = dt.datetime.now()
                 data_hora_resposta = hora_atual.strftime('%d/%m/%Y %H:%M')
                         
-                # Criando uma nova linha ao dataFrame
+                # Criando uma nova linha ao dataFrame com dicionario
                 nova_linha = {'idade': idade, 'genero': genero.upper(), 'resposta_1':lista_respostas[0], 'resposta_2':lista_respostas[1], 'resposta_3':lista_respostas[2], 
                           'resposta_4':lista_respostas[3], 'resposta_5':lista_respostas[4], 'resposta_6':lista_respostas[5], 'data/hora resposta': data_hora_resposta}
                 # Adicionando a nova linha ao dataframe.
